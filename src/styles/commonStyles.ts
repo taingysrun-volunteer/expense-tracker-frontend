@@ -1,0 +1,327 @@
+import React from 'react';
+
+export const commonStyles: Record<string, React.CSSProperties> = {
+    // Layout
+    container: {
+        minHeight: '100vh',
+        background: '#f5f7fb',
+    },
+    content: {
+        padding: 32,
+        maxWidth: 1400,
+        margin: '0 auto',
+    },
+
+    // Error handling
+    error: {
+        background: '#fee2e2',
+        color: '#b91c1c',
+        padding: '12px 16px',
+        borderRadius: 8,
+        marginBottom: 24,
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    closeError: {
+        background: 'transparent',
+        border: 'none',
+        color: '#b91c1c',
+        cursor: 'pointer',
+        fontSize: 20,
+        padding: 0,
+        width: 24,
+        height: 24,
+    },
+
+    // Loading
+    loading: {
+        textAlign: 'center',
+        padding: 40,
+        fontSize: 16,
+        color: '#6b7280',
+    },
+
+    // Buttons
+    addButton: {
+        padding: '10px 20px',
+        borderRadius: 6,
+        border: 'none',
+        background: '#2563eb',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 14,
+        fontWeight: 500,
+    },
+    editButton: {
+        padding: '6px 12px',
+        borderRadius: 4,
+        border: 'none',
+        background: '#3b82f6',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 13,
+        marginRight: 8,
+    },
+    deleteButton: {
+        padding: '6px 12px',
+        borderRadius: 4,
+        border: 'none',
+        background: '#ef4444',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 13,
+    },
+    cancelButton: {
+        padding: '10px 20px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        background: '#fff',
+        color: '#374151',
+        cursor: 'pointer',
+        fontSize: 14,
+        fontWeight: 500,
+        marginRight: 12,
+    },
+    submitButton: {
+        padding: '10px 20px',
+        borderRadius: 6,
+        border: 'none',
+        background: '#2563eb',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 14,
+        fontWeight: 500,
+    },
+    deleteConfirmButton: {
+        padding: '10px 20px',
+        borderRadius: 6,
+        border: 'none',
+        background: '#ef4444',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 14,
+        fontWeight: 500,
+    },
+
+    // Toolbar
+    toolbar: {
+        display: 'flex',
+        gap: 12,
+        marginBottom: 24,
+    },
+    searchInput: {
+        flex: 1,
+        padding: '10px 16px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        fontSize: 14,
+    },
+    filterSelect: {
+        padding: '10px 16px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        fontSize: 14,
+        background: '#fff',
+        cursor: 'pointer',
+    },
+
+    // Tables
+    tableWrapper: {
+        background: '#fff',
+        borderRadius: 8,
+        boxShadow: '0 2px 8px rgba(15,23,42,0.08)',
+        overflow: 'hidden',
+    },
+    table: {
+        width: '100%',
+        borderCollapse: 'collapse',
+    },
+    tableHeader: {
+        background: '#f9fafb',
+        borderBottom: '1px solid #e5e7eb',
+    },
+    th: {
+        padding: '12px 16px',
+        textAlign: 'left',
+        fontSize: 13,
+        fontWeight: 600,
+        color: '#374151',
+    },
+    td: {
+        padding: '12px 16px',
+        borderBottom: '1px solid #f3f4f6',
+        fontSize: 14,
+        color: '#111827',
+    },
+    actionCell: {
+        display: 'flex',
+        gap: 8,
+    },
+
+    // Pagination
+    pagination: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '16px 20px',
+        background: '#f9fafb',
+        borderTop: '1px solid #e5e7eb',
+    },
+    paginationInfo: {
+        fontSize: 14,
+        color: '#6b7280',
+    },
+    paginationButtons: {
+        display: 'flex',
+        gap: 8,
+    },
+    pageButton: {
+        padding: '6px 12px',
+        borderRadius: 4,
+        border: '1px solid #d1d5db',
+        background: '#fff',
+        color: '#374151',
+        cursor: 'pointer',
+        fontSize: 13,
+    },
+    pageButtonActive: {
+        padding: '6px 12px',
+        borderRadius: 4,
+        border: '1px solid #2563eb',
+        background: '#2563eb',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: 13,
+        fontWeight: 500,
+    },
+    pageButtonDisabled: {
+        padding: '6px 12px',
+        borderRadius: 4,
+        border: '1px solid #d1d5db',
+        background: '#f3f4f6',
+        color: '#9ca3af',
+        cursor: 'not-allowed',
+        fontSize: 13,
+    },
+    ellipsis: {
+        padding: '6px 12px',
+        fontSize: 13,
+        color: '#6b7280',
+    },
+
+    // Dialogs/Modals
+    overlay: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'rgba(0, 0, 0, 0.5)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 1000,
+    },
+    dialog: {
+        background: '#fff',
+        borderRadius: 8,
+        padding: 24,
+        maxWidth: 500,
+        width: '90%',
+        maxHeight: '90vh',
+        overflow: 'auto',
+    },
+    dialogTitle: {
+        margin: 0,
+        marginBottom: 20,
+        fontSize: 20,
+        fontWeight: 600,
+        color: '#111827',
+    },
+    dialogText: {
+        marginBottom: 20,
+        fontSize: 14,
+        color: '#6b7280',
+    },
+    dialogActions: {
+        display: 'flex',
+        justifyContent: 'flex-end',
+        gap: 12,
+        marginTop: 24,
+    },
+
+    // Forms
+    formGroup: {
+        marginBottom: 16,
+    },
+    label: {
+        display: 'block',
+        marginBottom: 6,
+        fontSize: 14,
+        fontWeight: 500,
+        color: '#374151',
+    },
+    dialogInput: {
+        width: '100%',
+        padding: '10px 12px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        fontSize: 14,
+        boxSizing: 'border-box',
+    },
+    dialogInputError: {
+        width: '100%',
+        padding: '10px 12px',
+        borderRadius: 6,
+        border: '1px solid #ef4444',
+        fontSize: 14,
+        boxSizing: 'border-box',
+    },
+    errorText: {
+        color: '#ef4444',
+        fontSize: 12,
+        marginTop: 4,
+    },
+    dialogSelect: {
+        width: '100%',
+        padding: '10px 12px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        fontSize: 14,
+        background: '#fff',
+        cursor: 'pointer',
+        boxSizing: 'border-box',
+    },
+    dialogTextarea: {
+        width: '100%',
+        padding: '10px 12px',
+        borderRadius: 6,
+        border: '1px solid #d1d5db',
+        fontSize: 14,
+        minHeight: 80,
+        resize: 'vertical',
+        boxSizing: 'border-box',
+        fontFamily: 'inherit',
+    },
+
+    // Status badges
+    activeBadge: {
+        display: 'inline-block',
+        padding: '4px 12px',
+        borderRadius: 12,
+        fontSize: 12,
+        fontWeight: 500,
+        background: '#dcfce7',
+        color: '#166534',
+    },
+    inactiveBadge: {
+        display: 'inline-block',
+        padding: '4px 12px',
+        borderRadius: 12,
+        fontSize: 12,
+        fontWeight: 500,
+        background: '#fee2e2',
+        color: '#991b1b',
+    },
+};
