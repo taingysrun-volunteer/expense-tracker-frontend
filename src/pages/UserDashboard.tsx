@@ -48,9 +48,17 @@ export default function UserDashboard(): JSX.Element {
             <Toolbar title="Expense Tracker" onLogout={handleLogout} />
 
             <div style={styles.content}>
-                 <h1 style={styles.welcomeTitle}>
-                    Welcome back, {user.firstName} {user.lastName}
-                </h1>
+                <div style={styles.header}>
+                    <h1 style={styles.welcomeTitle}>
+                        Welcome back, {user.firstName} {user.lastName}
+                    </h1>
+                    <button 
+                        style={styles.profileButton}
+                        onClick={() => navigate("/user/profile")}
+                    >
+                        View Profile
+                    </button>
+                </div>
 
                 <UserExpenseReport />
 
@@ -69,11 +77,26 @@ const styles: Record<string, React.CSSProperties> = {
         maxWidth: 1200,
         margin: "0 auto",
     },
+    header: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginBottom: 24,
+    },
     welcomeTitle: {
         margin: 0,
-        marginBottom: 24,
         fontSize: 24,
         color: "#111827",
+    },
+    profileButton: {
+        padding: "10px 20px",
+        borderRadius: 6,
+        border: "none",
+        background: "#3b82f6",
+        color: "#fff",
+        cursor: "pointer",
+        fontSize: 14,
+        fontWeight: 500,
     },
     loading: {
         minHeight: "100vh",

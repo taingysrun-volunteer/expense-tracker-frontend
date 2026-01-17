@@ -8,6 +8,7 @@ import CategoryManagement from "../pages/CategoryManagement";
 import ExpenseReport from "../pages/ExpenseReport";
 import UserExpenseManagement from "../pages/UserExpenseManagement";
 import RegisterVerification from "../pages/RegisterVerification";
+import UserProfile from "../pages/UserProfile";
 
 export default function AppRoutes() {
     return (
@@ -22,6 +23,7 @@ export default function AppRoutes() {
                 <Route path="/admin/reports" element={<ExpenseReport />} />
                 <Route path="/user/dashboard" element={<UserDashboard />} />
                 <Route path="/user/expenses" element={<UserExpenseManagement />} />
+                <Route path="/user/profile" element={<UserProfile />} />
                 <Route path="/" element={<Navigate to="/login" replace />} />
             </Routes>
         </BrowserRouter>
