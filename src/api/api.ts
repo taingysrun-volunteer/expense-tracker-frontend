@@ -106,7 +106,7 @@ class ApiService {
 
 // Create a singleton instance with base URL from env
 // Use relative URL for proxy to work in development
-const baseURL = process.env.REACT_APP_API_URL;;
+const baseURL = process.env.REACT_APP_API_URL;
 const api = new ApiService(baseURL);
 
 export default api;
