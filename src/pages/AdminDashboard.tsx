@@ -86,6 +86,18 @@ export default function AdminDashboard(): JSX.Element {
                             View Reports
                         </button>
                     </div>
+
+                    <div style={styles.card}>
+                        <h3 style={styles.cardTitle}>Request Logs</h3>
+                        <p style={styles.cardText}>View request logs and system activity</p>
+                        <button
+                            style={styles.cardButton}
+                            onClick={() => navigate("/admin/logs")}
+                        >
+                            View Logs
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -122,7 +134,7 @@ const styles: Record<string, React.CSSProperties> = {
     },
     grid: {
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
         gap: 24,
     },
     card: {
